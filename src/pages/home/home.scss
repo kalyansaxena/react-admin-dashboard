@@ -1,0 +1,124 @@
+.home {
+  display: flex;
+
+  .homeContainer {
+    flex: 6;
+
+    .widgets,
+    .charts {
+      display: flex;
+      padding: 20px;
+      gap: 20px;
+    }
+
+    .charts {
+      padding: 5px 20px;
+    }
+  }
+
+  .menu-container {
+    display: none;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .home {
+    position: relative;
+    .homeContainer {
+      flex: 1;
+      .widgets,
+      .charts {
+        flex-direction: column;
+        padding: 10px;
+      }
+    }
+
+    .menu-container {
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 50%;
+      min-height: 100vh;
+      background-color: #888;
+
+      .top {
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        // border-bottom: 0.5px solid rgb(238, 236, 236);
+        border-bottom: 0.5px solid #333;
+        margin-right: 5%;
+      }
+
+      .center {
+        padding: 10px;
+        max-height: calc(100vh - 8rem);
+        overflow-y: auto;
+
+        ul {
+          list-style: none;
+          margin: 0;
+          padding: 0;
+
+          .title {
+            font-size: 12px;
+            font-weight: bold;
+            color: black;
+            margin-top: 15px;
+            margin-bottom: 5px;
+          }
+
+          .main {
+            margin-top: 0px;
+          }
+
+          li {
+            display: flex;
+            align-items: center;
+            padding: 5px;
+            cursor: pointer;
+
+            &:hover {
+              background-color: rgb(109, 206, 209);
+            }
+
+            .icon {
+              font-size: 20px;
+              color: #002853;
+            }
+
+            span {
+              font-size: 16px;
+              font-weight: 500;
+              margin-left: 10px;
+            }
+          }
+        }
+      }
+
+      .bottom {
+        display: flex;
+        align-items: center;
+        margin: 10px;
+
+        .colorOption {
+          width: 20px;
+          height: 20px;
+          border-radius: 5px;
+          border: 1px solid gray;
+          cursor: pointer;
+          margin: 5px;
+          &:nth-child(1) {
+            background-color: #000;
+          }
+
+          &:nth-child(2) {
+            background-color: #fff;
+          }
+        }
+      }
+    }
+  }
+}
