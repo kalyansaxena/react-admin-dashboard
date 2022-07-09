@@ -14,7 +14,7 @@ function App() {
     <div className={darkMode ? "app dark" : "app"}>
       <BrowserRouter>
         <Routes>
-          <Route path="/">
+          <Route path="/react-admin-dashboard">
             <Route index element={<Home />} />
             <Route path="users">
               <Route index element={<List />} />
