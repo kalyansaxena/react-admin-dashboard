@@ -13,7 +13,7 @@ const DataTable = () => {
         return (
           <div className="cellAction">
             <Link
-              to="/users/test"
+              to="test"
               style={{ textDecoration: "none", color: "inherit" }}
             >
               <div className="viewButton">View</div>

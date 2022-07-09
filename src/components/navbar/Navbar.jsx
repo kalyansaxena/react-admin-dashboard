@@ -20,7 +20,7 @@ const Navbar = () => {
     <div className="navbar">
       <div className="wrapper">
         <Link
-          to="/"
+          to="/react-admin-dashboard"
           style={{ textDecoration: "none", color: "inherit" }}
           className="logo-container-link"
         >

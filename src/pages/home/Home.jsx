@@ -12,7 +12,6 @@ import CreditCardIcon from "@mui/icons-material/CreditCard";
 import StoreIcon from "@mui/icons-material/Store";
 import InsertChartIcon from "@mui/icons-material/InsertChart";
 import SettingsApplicationsIcon from "@mui/icons-material/SettingsApplications";
-// import ExitToAppIcon from "@mui/icons-material/ExitToApp";
 import NotificationsNoneIcon from "@mui/icons-material/NotificationsNone";
 import SettingsSystemDaydreamOutlinedIcon from "@mui/icons-material/SettingsSystemDaydreamOutlined";
 import PsychologyOutlinedIcon from "@mui/icons-material/PsychologyOutlined";
@@ -54,7 +53,10 @@ const Home = () => {
           <div className="center">
             <ul>
               <p className="title main">MAIN</p>
-              <Link to="/" style={{ textDecoration: "none", color: "inherit" }}>
+              <Link
+                to="/react-admin-dashboard"
+                style={{ textDecoration: "none", color: "inherit" }}
+              >
                 <li>
                   <DashboardIcon className="icon" />
                   <span>Dashboard</span>
@@ -62,7 +64,7 @@ const Home = () => {
               </Link>
               <p className="title">LISTS</p>
               <Link
-                to="/users"
+                to="/react-admin-dashboard/users"
                 style={{ textDecoration: "none", color: "inherit" }}
               >
                 <li>
